@@ -154,20 +154,30 @@ Cradle
 │   ├── env_config_stardew_shopping.json
 │   ├── openai_config.json
 │   ├── claude_config.json
-│   └── restful_claude_config.json
+│   ├── restful_claude_config.json
+│   └── ...
 ├── deps # The dependencies for the Cradle framework, ignore this folder
 ├── docs # The documentation for the Cradle framework, ignore this folder
-├── res # ⭐⭐⭐ The resources for the Cradle framework
+├── res # The resources for the Cradle framework
 │   ├── models # Ignore this folder
 │   ├── tool # Subfinder for RDR2
-│   ├── dealers # The resources for Dealer's Life 2
-│   │   ├── prompts # The prompts for Dealer's Life 2
+│   ├── [game] # ⭐⭐⭐ The resources for game, exmpale: rdr2, dealers, skylines, stardew
+│   │   ├── prompts # The prompts for the game
 │   │   │   └── templates
 │   │   │       ├── action_planning.prompt
 │   │   │       ├── information_gathering.prompt
 │   │   │       ├── self_reflection.prompt
 │   │   │       └── task_inference.prompt
-│   │   └── skills # The skills json for Dealer's Life 2, it will be generated automatically
+│   │   ├── skills # The skills json for the game, it will be generated automatically
+│   │   ├── icons # The icons difficult for GPT-4 to recognize in the game can be replaced with text for better recognition using an icon replacer.
+│   │   └── saves # Save files in the game
+│   └── ...
+├── requirements.txt # The requirements for the Cradle framework
+├── runner.py # The main entry for the Cradle framework
+├── cradle # Cradle's core modules
+│   ├── config # The configuration for the Cradle framework
+│   ├── environment # The environment for the Cradle framework
+│   │   ├── [game] # ⭐⭐⭐ The environment for the game, exmpale: rdr2, dealers, skylines, stardew
 ```
 
 # Citation
